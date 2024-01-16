@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonas' listelager</title>
+    <link rel="stylesheet" href="styling.css">
+
+</head>
+
+<body>
+    <h1 onclick="bildetest()">VK's semi-automatiske listelager:</h1>
+
+    <div id="startmeny">
+        <p>Hei! Velkommen til liste-lageren: Varm Karamell-utgave. Skriv hva du vil rangere etter i tekstboksen under. Deretter trykker du [ENTER]. Videre vil du få opp to bilder av gutta. Du trykker på det navnet som bedre treffer spørsmålet. Du skjønner. Når du har rangert nok folk, vil programmet automatisk vise en liste basert på det du har svart. Husk spørsmålstegn. Advarsel: det tar litt tid.</p>
+
+        <input type="text" id="Spørsmål" name="Spørsmål" placeholder="Hvem av gutta..." data-search autocomplete="off">
+    </div>
+
+    <div id="velge-vindu">
+        <div id="overskrift">
+            <h2 id="overskrift_spørsmål">Overskrift/spørsmål</h2>
+        </div>
+
+        <div class="bilde" >
+            <img id="bilde1" src="Bilder/Pelle.jpg" alt="bilde av person 1">
+        </div>
+
+        <div class="bilde">
+            <img id="bilde2" src="Bilder/Ola.jpg" alt="bilde av person 2">
+        </div>
+
+        <div class="knapp-boks" id="navn1">
+            <p>navn 1</p>
+        </div>
+
+        <div class="knapp-boks" id="navn2">
+            <p>navn 2</p>
+        </div>
+    </div>
+
+    <div id="liste">
+        <h2>Resultat:</h2>
+
+        <table id="tabelliste">
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
