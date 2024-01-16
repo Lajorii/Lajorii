@@ -128,4 +128,17 @@ td {
     #overskrift {
         font-size: 12px;
     }
+
+    th {
+    padding: 5px 15px 5px 5px;
+    border-right: 1px black solid;
+    }
+
+    td {
+    padding: 7px 7px 7px 100px;
+    }
+
+    table {
+    font-size: 22px;
+    }
 }
