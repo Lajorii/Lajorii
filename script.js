@@ -20,6 +20,7 @@ lengdetest = Gutta.length
 function LagListe(Ferdig) {
     let tabell = document.getElementById("tabelliste");
     let liste = document.getElementById("liste");
+    
 
     for (let i = 0; i < Ferdig.length; i++) {
         let rad = document.createElement("tr");
@@ -69,7 +70,10 @@ document.addEventListener("keypress", async (event) => {
 
         spørsmål = document.getElementById("Spørsmål").value;
         let overskrift_spørsmål = document.getElementById("overskrift_spørsmål");
+        let overskrift_liste = document.getElementById("overskrift_liste")
+
         overskrift_spørsmål.innerHTML = spørsmål;
+        overskrift_liste.innerHTML = "Resultat: " + spørsmål
 
         velgevindu.style.display = "grid";
 
